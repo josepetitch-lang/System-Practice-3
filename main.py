@@ -17,7 +17,8 @@ def execute_tgs():
     print()
     print("SIMULADOR DE TEORÍA GENERAL DE SISTEMAS (TGS)\n")
 
-    for i in range(1, 5):
+    for i in range(1, 10):
+       time.sleep(3)
        print(f" System: Analizando Ciclo Operativo {i}")
        time.sleep(5)
 
@@ -39,12 +40,14 @@ def execute_tgs():
            # EMPRESA ESTÁTICA: 
            time.sleep(3)
            print(f"Empresa Estática: Linked_Close (Sistema_Cerrado)")
-           print(f"Decision: Producción invariable de{data['produccion_estatica']}")
+           print(f"Decision: Producción invariable de ${data['produccion_estatica']}")
            write_slowed(f"Resultado: El capital cerró en ${data['capital_estatica']}")
 
            # EMPRESA ADAPTATIVA (ORION PA LOS PANAS ,SKSLKSLKSLKSKLSKLSKKLS)
            print(f"Empresa Adaptativa: ORION (Sistema_Abierto)")
            write_slowed(f"Decision: Ajuste en ORION, dinámico {data['produccion_adaptativa']}")
+           time.sleep(4)
+           print()
            write_slowed(f"Resutado: El capital cerró en ${data['capital_adaptativa']:.2f}")
            print("="*50)
 
@@ -58,21 +61,35 @@ def execute_tgs():
                write_slowed("El Sistema Cerrado resiste, pero su Entropía (Caos) no durará mucho")
        except Exception as e:
            print(f"Error: {e}: Problemas con la Simulación")
+           continue
 
-           time.sleep(5)
-           print("FIN DE SIMULACIÓN... (Cargando reporte...)")
-           time.sleep(5)
-           print("Datos cargados en la databse y en reporte.txt")
+    time.sleep(5)
+    print("FIN DE SIMULACIÓN... (Cargando reporte...)")
+    time.sleep(5)
+    print("Datos cargados en la databse y en reporte.txt")
 
-           print("Veamos los datos necesarios")
+    print("Veamos los datos necesarios")
 
-           decision = input("¿Se logró el equilibrio?(s/n):")
-           if decision == "s":
+    decision = input("¿Se logró el objetivo de demostrar la eficiencia del Sistema Abierto?(s/n):")
+    if decision == "s":
                print("Listo: Sistema Abierto WINS")
-           else:
+    else:
                print("Bad luck. Try it next time")
 
 
 
 if __name__ == "__main__":
     execute_tgs()
+
+
+#for i in range(1, 10):
+    #try:
+     #   print(f"\n System: Analizando Ciclo Operativo {i}")
+      #  time.sleep(1) # Bajamos el tiempo para que no sea eterno
+      #  data = correr_ciclo_simulacion(i)
+        
+        # ... (todo tu código de print y write_slowed aquí adentro)
+        
+    #except Exception as e:
+       # print(f" Salto en Ciclo {i}: {e}")
+       # continue
