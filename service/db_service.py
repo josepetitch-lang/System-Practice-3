@@ -27,4 +27,8 @@ def obtener_datos_sistemas(n_ciclo):
     cerrado = ejecutar_query(query_est, (n_ciclo,))
     abierto = ejecutar_query(query_ada, (n_ciclo,))
     
+    
+    if not cerrado or not abierto:
+        return (n_ciclo, 100, 200, 0), (n_ciclo, 100, 200, 0)
+        
     return cerrado[0], abierto[0]
