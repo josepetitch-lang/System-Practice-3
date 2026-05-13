@@ -1,0 +1,28 @@
+Ciclo 1 | Evento: Mercado Estable | Cap.Est: 4480.00 | Cap Ada: 4965.03
+Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 3765.00 | Cap Ada: 5450.05
+Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 2585.00 | Cap Ada: 5770.03
+Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 4300.00 | Cap Ada: 7435.06
+Ciclo 1 | Evento: Mercado Estable | Cap.Est: 4480.00 | Cap Ada: 4965.03
+Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 3765.00 | Cap Ada: 5450.05
+Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 2585.00 | Cap Ada: 5770.03
+Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 4300.00 | Cap Ada: 7435.06
+Ciclo 1 | Evento: Mercado Estable | Cap.Est: 4480.00 | Cap Ada: 4965.03
+Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 3765.00 | Cap Ada: 5450.05
+Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 2585.00 | Cap Ada: 5770.03
+Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 4300.00 | Cap Ada: 7435.06
+Ciclo 5 | Evento: Crisis de Suministro | Cap.Est: 1170.00 | Cap Ada: 8155.04
+Ciclo 1 | Evento: Mercado Estable | Cap.Est: 4480.00 | Cap Ada: 4965.03
+Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 3765.00 | Cap Ada: 5450.05
+Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 2585.00 | Cap Ada: 5770.03
+Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 4300.00 | Cap Ada: 7435.06
+Ciclo 5 | Evento: Crisis de Suministro | Cap.Est: 1170.00 | Cap Ada: 8155.04
+Ciclo 1 | Evento: Mercado Estable | Cap.Est: 4480.00 | Cap Ada: 4965.03
+Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 3765.00 | Cap Ada: 5450.05
+Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 2585.00 | Cap Ada: 5770.03
+Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 4300.00 | Cap Ada: 7435.06
+Ciclo 5 | Evento: Crisis de Suministro | Cap.Est: 1170.00 | Cap Ada: 8155.04
+Ciclo 6 | Evento: Recuperación Lenta | Cap.Est: 1155.00 | Cap Ada: 8140.06
+Ciclo 7 | Evento: Estabilidad Renovada | Cap.Est: 765.00 | Cap Ada: 950.05
+Ciclo 8 | Evento: Auge del Mercado | Cap.Est: 775.00 | Cap Ada: 960.04
+Ciclo 9 | Evento: Estable | Cap.Est: 750.00 | Cap Ada: 935.06
+
