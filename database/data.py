@@ -24,7 +24,10 @@ def obtener_datos_sistemas(n_ciclo):
     query_est = "SELECT Ciclo, Produccion_FILA, Costo_Operativo, Capital_Restante FROM Empresa_Estatica WHERE Ciclo = ?"
     query_ada = "SELECT Ciclo, Produccion_Ajustada, Costo_Optimizado, Capital_Restante FROM Empresa_Adaptativa WHERE Ciclo = ?"
     
-    cerrado = ejecutar_query(query_est, (n_ciclo,))
-    abierto = ejecutar_query(query_ada, (n_ciclo,))
+    cerrado = ejecutar_query(query_est, (n_ciclo-1,)) # Buscamos el capital del ciclo anterior
+    abierto = ejecutar_query(query_ada, (n_ciclo-1,))
     
+    if not cerrado or not abierto:
+        return (n_ciclo-1, 100, 200, 1000), (n_ciclo-1, 100, 200, 1000)
+        
     return cerrado[0], abierto[0]
