@@ -1,0 +1,269 @@
+plan-description-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+}
+
+.plan-description-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.plan-description-card h3 i {
+    color: var(--accent);
+}
+
+.identity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.institutional-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+}
+
+.institutional-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.institutional-card p {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* 2. Rejilla de Bloques Metodológicos */
+.blocks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.block-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.block-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -3px rgba(0,0,0,0.05);
+}
+
+.block-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(37, 99, 235, 0.08);
+    color: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.block-sub {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.block-body h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 4px 0 10px 0;
+}
+
+.block-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* 3. Rejilla de Fallas (Ciberseguridad Mal Aplicada) */
+.fallas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.falla-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--danger);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.falla-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.falla-number {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.falla-header h3 {
+    font-size: 1.15rem;
+    color: var(--primary);
+}
+
+.falla-text {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* 4. Rejilla de Casos de Estudio */
+.casos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 24px;
+}
+
+@media(max-width: 600px) {
+    .casos-grid { grid-template-columns: 1fr; }
+}
+
+.caso-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+}
+
+.caso-badge-wrapper {
+    margin-bottom: 12px;
+}
+
+.caso-ambito {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.caso-card.nacional .caso-ambito {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.caso-card.global .caso-ambito {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.caso-card h3 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.caso-details, .caso-ocurrencia {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.caso-ocurrencia {
+    border-top: 1px dashed var(--border-color);
+    padding-top: 8px;
+    margin-bottom: 0;
+    color: var(--text-main);
+}
+
+/* 5. Rejilla de Referencias Tecnológicas */
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.ref-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ref-brand {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ref-brand i {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.ref-card h4 {
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.ref-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.ref-link {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+
+.ref-link:hover {
+    color: var(--accent-hover);
+    gap: 10px;
+}
+
+.identity-grid-spaced {
+    margin-top: 50px
+}
