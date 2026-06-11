@@ -1,9 +1,7 @@
 class PymeState:
     def __init__(self, presupuesto_inicial=500, seguridad_inicial=30, cultura_inicial=20, reputacion_inicial=50):
-        """
-        Inicializa las metricas base de la PYME (Abasto/Bodega).
-        Valores iniciales por defecto reflejan un negocio vulnerable en fase de diagnostico.
-        """
+        reflejan un negocio vulnerable en fase de diagnostico.
+     
         self.presupuesto = presupuesto_inicial
         self.seguridad_red = seguridad_inicial
         self.cultura_pyme = cultura_inicial
@@ -13,10 +11,6 @@ class PymeState:
         self.mensaje_final = ""
 
     def aplicar_impacto(self, impactos):
-        """
-        Aplica las variaciones de las opciones elegidas o de los ataques aleatorios.
-        Garantiza que los porcentajes se mantengan estrictamente entre 0 y 100.
-        """
         
         self.presupuesto += impactos.get("presupuesto", 0)
         
@@ -27,21 +21,16 @@ class PymeState:
         self.verificar_condiciones_criticas()
 
     def verificar_condiciones_criticas(self):
-        """
-        Verifica si la PYME ha quebrado financieramente o moralmente.
-        """
+       
         if self.presupuesto <= 0:
             self.game_over = True
-            self.mensaje_final = "¡QUIEBRA FINANCIERA! Te quedaste sin presupuesto para operar el negocio. El Plan DO falló por falta de liquidez."
+            self.mensaje_final = "QUIEBRA FINANCIERA: Te quedaste sin presupuesto para operar el negocio. El Plan DO falló por falta de liquidez."
         elif self.reputacion <= 10:
             self.game_over = True
-            self.mensaje_final = "¡QUIEBRA DE REPUTACIÓN! La comunidad perdió total confianza en el abasto debido a los incidentes de seguridad. Nadie vuelve a comprar aquí."
+            self.mensaje_final = "QUIEBRA DE REPUTACIÓN: La comunidad perdió total confianza en el abasto debido a los incidentes de seguridad. Nadie vuelve a comprar aquí."
 
     def procesar_ataque_aleatorio(self, ataque):
-        """
-        Evalua un ataque basandose en las defensas actuales de la PYME.
-        Retorna una tupla: (bool_exito, string_mensaje)
-        """
+       
         requisito = ataque["requisito"]
         valor_actual = getattr(self, requisito)
         
