@@ -23,7 +23,6 @@ class PlanDoGameApp:
         self.cargar_siguiente_turno()
 
     def crear_componentes_interfaz(self):
-        """ Maquetacion limpia de la ventana principal utilizando Grid y Pack """
         
         self.panel_stats = tk.Frame(self.root, bg="#252538", bd=2, relief="groove")
         
@@ -80,7 +79,7 @@ class PlanDoGameApp:
         self.lbl_creditos.pack()
 
     def actualizar_tablero_visual(self):
-        """ Actualiza los textos y los colores de la GUI segun las metricas """
+        
         self.lbl_turno.config(text=f"Turno: {self.state.turno_actual}")
         self.lbl_presupuesto.config(text=f"Presupuesto: ${self.state.presupuesto}")
         
@@ -127,7 +126,7 @@ class PlanDoGameApp:
         self.fase_ciclo = "decision"
 
     def validar_entrada_teclado(self):
-        """ Recoge el input, valida que sea A o B y ejecuta la decision """
+     
         entrada = self.entry_opcion.get().strip().upper()
         
         if entrada == "A":
@@ -143,7 +142,7 @@ class PlanDoGameApp:
             self.entry_opcion.delete(0, tk.END)
 
     def procesar_decision(self, indice_opcion):
-        """ Aplica los cambios del dilema y muestra el feedback en la interfaz """
+      
         opcion = self.dilema_actual["opciones"][indice_opcion]
         self.state.aplicar_impacto(opcion["impacto"])
         
@@ -162,7 +161,6 @@ class PlanDoGameApp:
         self.fase_ciclo = "ataque"
 
     def ejecutar_ciclo_juego(self):
-        """ Controla las fases intermedias mediante el boton de continuar """
         if self.fase_ciclo == "ataque":
             ataque = random.choice(ataques_aleatorios)
             exito, mensaje_ataque = self.state.procesar_ataque_aleatorio(ataque)
@@ -186,7 +184,6 @@ class PlanDoGameApp:
             self.finalizar_juego(victoria=False)
 
     def finalizar_juego(self, victoria):
-        """ Termina la ejecucion bloqueando controles y mostrando el estatus tecnico final """
         self.frame_input.pack_forget()
         self.btn_continuar.pack_forget()
         
