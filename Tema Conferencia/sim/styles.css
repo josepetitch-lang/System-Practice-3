@@ -1,0 +1,47 @@
+body { 
+    background: #0a0e14; 
+    color: #00ff41; 
+    font-family: 'Courier New', 
+    monospace; padding: 20px; 
+}
+
+.terminal { 
+    max-width: 600px; 
+    margin: auto; 
+    border: 1px solid #00ff41;
+    padding: 20px; 
+    box-shadow: 0 0 15px #00ff4133; 
+}
+
+#chat-historial { 
+    height: 200px; 
+    overflow-y: auto; 
+    border-bottom: 1px solid #00ff41; 
+    margin-bottom: 10px; 
+    display: flex; 
+    flex-direction: column-reverse; 
+}
+
+input { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #00ff41; 
+    color: white; 
+    width: 70%; 
+    padding: 5px; 
+}
+
+button { 
+    background: #00ff41; 
+    color: #0a0e14; 
+    border: none; 
+    cursor: pointer; 
+    padding: 5px 10px; 
+    font-weight: bold; 
+}
+
+#seccion-preguntas { 
+    margin-top: 20px; 
+    border: 1px solid #00ff41; 
+    padding: 15px; 
+}
