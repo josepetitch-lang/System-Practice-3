@@ -1,9 +1,6 @@
 class PymeState:
     def __init__(self, presupuesto_inicial=500, seguridad_inicial=30, cultura_inicial=20, reputacion_inicial=50):
-        """
-        Inicializa las metricas base de la PYME (Abasto/Bodega).
-        Valores iniciales por defecto reflejan un negocio vulnerable en fase de diagnostico.
-        """
+       
         self.presupuesto = presupuesto_inicial
         self.seguridad_red = seguridad_inicial
         self.cultura_pyme = cultura_inicial
@@ -13,10 +10,7 @@ class PymeState:
         self.mensaje_final = ""
 
     def aplicar_impacto(self, impactos):
-        """
-        Aplica las variaciones de las opciones elegidas o de los ataques aleatorios.
-        Garantiza que los porcentajes se mantengan estrictamente entre 0 y 100.
-        """
+        
         
         self.presupuesto += impactos.get("presupuesto", 0)
         

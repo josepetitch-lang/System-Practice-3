@@ -6,7 +6,8 @@ Este es un PLAN DO, buscando concientizar acerca de la importancia de la ciberse
 -- Documentación acerca del Plan y la Ciberseguridad
 -- Fases, Bloques y Objetivos (Misión, Visión) del Plan
 
-El punto es que las diferentes PYMEs en Venezuela puedan tomarse en serio este tema sin tener que invertir mucho/cometer errores tontos
+-- El punto es que las diferentes PYMEs en Venezuela puedan tomarse en serio este tema sin tener que:
+invertir mucho/cometer errores tontos
 
 # PUNTO A RESALTAR: 
 
@@ -21,11 +22,11 @@ Esta "Pagina web" solamente es acerca de nuestro plan de desarrollo organizacion
 * **Modularidad nivel idiotas**: CSS por carpetas porque meter todo en un solo archivo me dió flojera (XD?)
 * **Cronograma de 24 Semanas**: Un acordeón sin ser acordeón más feo (hecho en JS) que CANTV al mediodía 
 * **Descarga Directa con fallas pal word JSJSJSJSJ**: Se supone que el botón hero hace que lo descargues, pero descargas un troyano
-* **Sustento de Gigantes**: Referencias a Microsoft y Cisco pq nos dió la focking gana
+* **Sustento de Gigantes**: Referencias a Microsoft y Cisco pq nos dió la focking gana 
 
 # ¿Actualizaciones futuras?
 
-Junio - Septiembre 2026 (Publicación, Documentación Legal)
+Junio - Septiembre 2026 (Publicación, Documentación Legal) 
 
 # Tecnologías utilizadas:
 
@@ -37,7 +38,7 @@ Junio - Septiembre 2026 (Publicación, Documentación Legal)
 # Opiniones del Team Developer:
 
 Cazador_NPC:
-josepetitch-lang: centrar un div buscar
+josepetitch-lang: 
 Joseph2607-ALT:
 Gabrielzzz64:
 

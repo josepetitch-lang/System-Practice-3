@@ -1,9 +1,0 @@
-Ciclo 1 | Evento: Mercado Estable | Cap.Est: 780.00 | Cap Ada: 965.03
-Ciclo 2 | Evento: Alta Demanda - Inflación | Cap.Est: 4465.00 | Cap Ada: 4950.05
-Ciclo 3 | Evento: Recesión de Temporada | Cap.Est: 3785.00 | Cap Ada: 5470.03
-Ciclo 4 | Evento: Auge Tecnológico Extremo | Cap.Est: 2550.00 | Cap Ada: 5735.06
-Ciclo 5 | Evento: Crisis de Suministro | Cap.Est: 4320.00 | Cap Ada: 7455.04
-Ciclo 6 | Evento: Recuperación Lenta | Cap.Est: 1155.00 | Cap Ada: 8140.06
-Ciclo 7 | Evento: Estabilidad Renovada | Cap.Est: 765.00 | Cap Ada: 950.05
-Ciclo 8 | Evento: Auge del Mercado | Cap.Est: 775.00 | Cap Ada: 960.04
-Ciclo 9 | Evento: Estable | Cap.Est: 750.00 | Cap Ada: 935.06

@@ -42,4 +42,4 @@ Dentro de ahí, se escriben a traves de un commit y se guardan los datos en el a
 
 # ¿Actualizaciones futuras?
 
-Mayo - Junio 2026 (INTERFAZ GRÁFICA)
+Mayo - Agosto 2026 (INTERFAZ GRÁFICA)

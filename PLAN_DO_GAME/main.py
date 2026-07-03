@@ -23,7 +23,6 @@ class PlanDoGameApp:
         self.cargar_siguiente_turno()
 
     def crear_componentes_interfaz(self):
-        """ Maquetacion limpia de la ventana principal utilizando Grid y Pack """
         
         self.panel_stats = tk.Frame(self.root, bg="#252538", bd=2, relief="groove")
         
@@ -204,4 +203,4 @@ class PlanDoGameApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = PlanDoGameApp(root)
-    root.mainloop()
+    root.mainloop() 
